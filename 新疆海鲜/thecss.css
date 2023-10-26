@@ -1,0 +1,274 @@
+div.header
+{
+    height: 60px;
+    background-color:beige;
+    border-style:none;
+    padding:15px 180px;
+}
+div.logo p
+{
+    font-size: 30px;
+    line-height: 3%;
+}
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li
+{
+    font-size: 25px;
+}
+li.right
+{
+    float: right;
+}
+li.left
+{
+    float: left;
+}
+li a
+{
+    display: block;
+    width: 150px;
+    padding: 5px;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+
+}
+.banner-container
+{
+    width: 900px;
+    height: 500px;
+    /* 轮播图居中 */
+    margin: 1rem auto;
+    /* 隐藏超出部分内容 */
+    overflow: hidden;
+    position: relative;
+}
+.banner-container .banner-img-container
+{
+    width: 4500px;
+    height: 500px;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    animation: roll 12s infinite;
+}
+.banner-container .banner-img-container img
+{
+    width: 900px;
+    height: 100%;
+}
+@keyframes roll
+{
+    0%,10%{transform: translateX(0);}
+    20%,30%{transform: translateX(-900px);}
+    40%,50%{transform: translateX(-1800px);}
+    60%,70%{transform: translateX(-2700px);}
+    80%,90%{transform: translateX(-3600px);}
+    100%{transform: translateX(0);}
+}
+@keyframes float-effect
+{
+    0%{transform: translate(0,2%);opacity: 0.1;}
+    100%{transform: translate(0,0);opacity: 1;}
+}
+.img-gallery-container
+{
+    overflow: hidden;
+    /* width: 1500px; */
+    padding-left: 6.5%;
+    padding-right: 0.5%;
+}
+.img-gallery-container h2
+{
+    padding-left: 52px;
+    font-size: 40px;
+}
+.img
+{
+    margin: 1%;
+    border: none;
+    float: left;
+    width: 300px;
+}
+.img img
+{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.desc
+{
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.advantages
+{
+    animation: float-effect 1.2s ;
+    overflow: hidden;
+}
+.advantage-1
+{
+    overflow: hidden;
+}
+.advantage-1 h2
+{
+    padding-left: 150px;
+    font-size: 40px;
+}
+.advantage-1 img,.advantage-3 img
+{
+    float: left;
+    padding-left: 120px;
+    width: 38%;
+    height: auto;
+}
+.advantage-1 p,.advantage-3 p
+{
+    font-size: 1.3rem;
+    float: right;
+    padding-top: 100px;
+    line-height: 35px;
+}
+.advantage-2
+{
+    overflow: hidden;
+}
+.advantage-2 h2
+{
+    padding-left: 150px;
+    font-size: 40px;
+    padding-top: 80px;
+} 
+.advantage-2 img
+{
+    float: right;
+    padding-right: 120px;
+    width: 34%;
+    height: auto;
+}
+.advantage-2 p
+{
+    font-size: 1.3rem;
+    line-height: 35px;
+    padding-left: 120px;
+    padding-top: 80px;
+}
+
+.advantage-3 h2
+{
+    padding-left: 150px;
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+.news
+{
+    padding: 5%;
+    margin: 7%;
+    width: 800px;
+    height: 1000px;
+    border-style: dotted;
+}
+.news-box
+{
+    margin: 5%;
+    width: 700px;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* overflow-wrap: break-word;
+    overflow: hidden; */
+    border-style: none;
+}
+.box
+{
+    display: block;
+    width: 300px;
+    height: 250px;
+    border-style: solid;
+    border-width: 2px;
+    /* flex: 1; */
+    border-radius: 10px;
+    box-shadow:7px 7px 6px gainsboro;
+    position: relative;
+    margin: 10px;
+    padding: 5px;
+}
+.box h4
+{
+    text-align: center;
+    font:bold;
+    font-size: 1.2rem;
+    color: black;
+}
+.box a
+{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+.box hr
+{
+    width: 70%;
+}
+.box p
+{
+    text-align: center;
+    color: black;
+}
+.box:hover
+{
+    opacity: 0.8;
+    transform:translate(-0.15%,-0.15%)
+}
+.calculate
+{
+    animation: float-effect 1.2s;
+}
+.calculate .title
+{
+    border-left-style: solid;
+    border-left-width: 7px;
+    margin-left: 5%;
+}
+.title h3
+{
+    font-size: 2.5rem;
+    padding-left: 1%;
+}
+.ways-box li
+{
+    margin-left: 10%;
+    font-size: 1.6rem;
+    font: bold;
+}
+.way
+{
+    display: flex;
+    margin: 30px;
+}
+.img-box p
+{
+    text-align: center;
+}
+.description
+{
+    position: relative;
+    margin-left: 5%;
+}
+.description p
+{
+    text-indent: 2rem;
+    line-height: 35px;
+    font-size: 1.2rem;
+    padding-top: 3%;
+}
