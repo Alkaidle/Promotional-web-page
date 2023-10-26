@@ -223,6 +223,7 @@ li a
 .box p
 {
     text-align: center;
+    text-indent: 1rem;
     color: black;
 }
 .box:hover
